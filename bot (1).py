@@ -6,8 +6,9 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 
 nest_asyncio.apply()
 
-# ⚠️ Paste your actual token from @BotFather between the quotes below
-BOT_TOKEN = "8682638608:AAGuaIGzYJVMkplryDfHZklky8NaKBsNMUk"
+# # System Environment Variable se token read karega (Secure Way)
+BOT_TOKEN = os.environ.get("8682638608:AAGuaIGzYJVMkplryDfHZklky8NaKBsNMUk")
+
 
 SAMPLE_JSON = [
     {
